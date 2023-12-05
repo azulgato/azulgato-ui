@@ -1,8 +1,19 @@
 {
   "name": "azulgato-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "El gato azul UI",
-  "main": "index.ts",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/azulgato-ui.cjs.js",
+  "module": "./lib/azulgato-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./lib/azulgato-ui.es.js",
+      "require": "./lib/azulgato-ui.cjs.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azulgato/azulgato-ui.git"
@@ -17,7 +28,6 @@
     "url": "https://github.com/azulgato/azulgato-ui/issues"
   },
   "homepage": "https://github.com/azulgato/azulgato-ui#readme",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
