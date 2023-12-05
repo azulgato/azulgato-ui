@@ -9,12 +9,6 @@
   ],
   "main": "./lib/azulgato-ui.cjs.js",
   "module": "./lib/azulgato-ui.es.js",
-  "exports": {
-    ".": {
-      "import": "./lib/azulgato-ui.es.js",
-      "require": "./lib/azulgato-ui.cjs.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azulgato/azulgato-ui.git"
