@@ -2,10 +2,11 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import react from '@vitejs/plugin-react-swc'
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
+import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), vanillaExtractPlugin()],
+  plugins: [react(), vanillaExtractPlugin(), dts()],
   build: {
     outDir: 'lib',
     emptyOutDir: true,
