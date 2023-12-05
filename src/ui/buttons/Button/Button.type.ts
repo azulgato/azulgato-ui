@@ -10,5 +10,7 @@ export interface ButtonProps
     | 'success'
     | 'info'
   sizeVariant?: 's' | 'm' | 'l'
-  label: string
+  label?: string
+  icon?: React.ReactNode
+  paddingVariant?: 's' | 'm' | 'l' | 'none'
 }

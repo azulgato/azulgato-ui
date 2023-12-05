@@ -1,5 +1,5 @@
-import { createTheme, createThemeContract } from '@vanilla-extract/css';
-import { lightTheme } from './defaultTheme';
+import { createTheme, createThemeContract } from '@vanilla-extract/css'
+import { lightTheme } from './defaultTheme'
 
 export const vars = createThemeContract({
   color: {
@@ -7,19 +7,22 @@ export const vars = createThemeContract({
     backgroundColor: '',
     background: {
       primary: '',
+      primaryDark: '',
       secondary: '',
+      danger: '',
+      dangerDark: '',
     },
     text: {
       primary: '',
       secondary: '',
-    }
+    },
   },
   font: {
-    body: ''
-  }
-});
+    body: '',
+  },
+})
 
-export const lightThemeClass = createTheme(vars, lightTheme);
+export const lightThemeClass = createTheme(vars, lightTheme)
 
 export const darkThemeClass = createTheme(vars, {
   color: {
@@ -27,14 +30,17 @@ export const darkThemeClass = createTheme(vars, {
     backgroundColor: '#000000',
     background: {
       primary: '',
+      primaryDark: '',
       secondary: '',
+      danger: '',
+      dangerDark: '',
     },
     text: {
       primary: '',
       secondary: '',
-    }
+    },
   },
   font: {
-    body: 'helvetica'
-  }
-});
+    body: 'helvetica',
+  },
+})
