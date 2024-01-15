@@ -6,6 +6,7 @@ export const vars = createThemeContract({
     brand: '',
     backgroundColor: '',
     background: {
+      primaryLight: '',
       primary: '',
       primaryDark: '',
       secondary: '',
@@ -29,6 +30,7 @@ export const darkThemeClass = createTheme(vars, {
     brand: 'red',
     backgroundColor: '#000000',
     background: {
+      primaryLight: '',
       primary: '',
       primaryDark: '',
       secondary: '',

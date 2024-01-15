@@ -3,6 +3,7 @@ export const lightTheme = {
     brand: '',
     backgroundColor: '#FDF8E7',
     background: {
+      primaryLight: '#00A1D9',
       primary: '#007EC9',
       primaryDark: '#0067A3',
       secondary: '#00A4A7',

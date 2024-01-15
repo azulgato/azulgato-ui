@@ -1,50 +1,39 @@
-import { keyframes } from '@vanilla-extract/css'
+import { style } from '@vanilla-extract/css'
 import { vars } from '../../../theme/theme.css'
 import { recipe } from '@vanilla-extract/recipes'
 
-const rotate = keyframes({
-  '0%': {
-    transform: 'translateY(0) translateZ(0) rotateZ(0deg)',
-  },
-  '100%': {
-    transform: 'translateY(5px) translateZ(-2px) rotateZ(-15deg)',
-  },
-})
-
-const wave = keyframes({
-  '0%': {
-    transform: 'translate3d(-90px,0,0)',
-  },
-  '100%': {
-    transform: 'translate3d(85px,0,0)',
-  },
-})
-
-const buttonBase = {
+const textInputBase = {
   borderRadius: '55px 55px 55px 55px',
-  border: 'none',
-  cursor: 'pointer',
+  outline: 'none',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  background: `linear-gradient(to left, ${vars.color.background.primaryDark} 45%, transparent 55%) right`,
-  backgroundSize: '250% 100%',
-  backgroundPosition: 'left bottom',
+  //border: 'none',
+  border: `2px solid ${vars.color.background.primary}`,
+  // background: `linear-gradient(to left, ${vars.color.background.primaryDark} 45%, transparent 55%) right`,
+  // backgroundSize: '250% 100%',
+  // backgroundPosition: 'left bottom',
   transition: 'all 0.1s ease-in',
-  ':hover': {
-    backgroundPosition: 'right bottom',
-  },
+  // ':hover': {
+  //   backgroundPosition: 'right bottom',
+  // },
 }
 
-export const buttonStyle = recipe({
-  base: buttonBase,
+export const textInputStyle = recipe({
+  base: textInputBase,
   variants: {
-    buttonVariant: {
+    colorVariant: {
       primary: {
-        backgroundColor: vars.color.background.primary,
-        color: vars.color.text.primary,
+        border: `2px solid ${vars.color.background.primaryLight}`,
+        //borderLeft: `2px solid ${vars.color.background.primary}`,
+        //borderRight: `2px solid ${vars.color.background.primary}`,
+        // color: vars.color.text.primary,
         ':hover': {
+          border: `2px solid ${vars.color.background.primary}`,
           //backgroundColor: vars.color.background.primaryDark,
+        },
+        ':focus': {
+          border: `2px solid ${vars.color.background.primaryDark}`,
         },
       },
       secondary: {
@@ -117,4 +106,51 @@ export const buttonStyle = recipe({
       none: {},
     },
   },
+})
+
+export const labelStyle = recipe({
+  base: {
+    wordWrap: 'break-word',
+  },
+  variants: {
+    colorVariant: {
+      primary: {},
+      secondary: {},
+      tertiary: {},
+      disabled: {},
+      danger: {},
+      warning: {},
+      success: {},
+      info: {},
+    },
+    size: {
+      s: {
+        fontSize: '12px',
+      },
+      m: {
+        fontSize: '16px',
+      },
+      l: {
+        fontSize: '24px',
+      },
+    },
+    paddingVariant: {
+      s: {
+        padding: '4px 8px',
+      },
+      m: {
+        padding: '8px 16px',
+      },
+      l: {
+        padding: '16px 32px',
+      },
+      none: {},
+    },
+  },
+})
+
+export const containerStyler = style({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 4,
 })
