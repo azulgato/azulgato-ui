@@ -1,6 +1,9 @@
 import type { Preview } from '@storybook/react'
 import React from 'react'
 import { ThemeProvider } from '../src/theme/ThemeContext'
+
+import '../app/globals.css'
+
 const preview: Preview = {
   parameters: {
     backgrounds: {
