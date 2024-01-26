@@ -3,6 +3,7 @@ export declare const lightTheme: {
         brand: string;
         backgroundColor: string;
         background: {
+            primaryLight: string;
             primary: string;
             primaryDark: string;
             secondary: string;
@@ -13,6 +14,11 @@ export declare const lightTheme: {
             primary: string;
             secondary: string;
         };
+    };
+    radius: {
+        lg: string;
+        md: string;
+        sm: string;
     };
     font: {
         body: string;

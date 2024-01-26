@@ -1,15 +1,15 @@
-/// <reference types="react" />
 import type { StoryObj } from '@storybook/react';
 declare const meta: {
     title: string;
-    component: (props: Omit<import("../Button/Button.type").ButtonProps, "label"> & {
-        icon: import("react").ReactNode;
-    }) => import("react/jsx-runtime").JSX.Element;
+    component: (props: import("./TextInput.type").TextInputProps) => import("react/jsx-runtime").JSX.Element;
     parameters: {
         layout: string;
     };
     tags: string[];
     argTypes: {
+        label: {
+            defaultValue: string;
+        };
         paddingVariant: {
             options: string[];
             control: {
@@ -22,5 +22,3 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const Primary: Story;
 export declare const Secondary: Story;
-export declare const Large: Story;
-export declare const Small: Story;
