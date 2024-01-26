@@ -15,6 +15,11 @@ export const lightTheme = {
       secondary: '',
     },
   },
+  radius: {
+    lg: '50px',
+    md: '25px',
+    sm: '15px',
+  },
   font: {
     body: '',
   },

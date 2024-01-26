@@ -19,9 +19,9 @@ export const theme = {
   },
   extend: {
     colors: {
-      border: 'hsl(var(--border))',
-      input: 'hsl(var(--input))',
-      ring: 'hsl(var(--ring))',
+      border: `var(${globalVars.primary})`,
+      input: `var(${globalVars.primaryLight})`,
+      ring: `var(${globalVars.primary})`,
       background: 'hsl(var(--background))',
       foreground: 'hsl(var(--foreground))',
       primary: {
@@ -54,9 +54,9 @@ export const theme = {
       },
     },
     borderRadius: {
-      lg: 'var(--radius)',
-      md: 'calc(var(--radius) - 2px)',
-      sm: 'calc(var(--radius) - 4px)',
+      lg: `var(${globalVars.radiusLg})`,
+      md: `var(${globalVars.radiusMd})`,
+      sm: `var(${globalVars.radiusSm})`,
     },
     keyframes: {
       'accordion-down': {

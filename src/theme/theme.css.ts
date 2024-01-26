@@ -18,6 +18,11 @@ export const vars = createThemeContract({
       secondary: '',
     },
   },
+  radius: {
+    lg: '',
+    md: '',
+    sm: '',
+  },
   font: {
     body: '',
   },
@@ -41,6 +46,11 @@ export const darkThemeClass = createTheme(vars, {
       primary: '',
       secondary: '',
     },
+  },
+  radius: {
+    lg: '',
+    md: '',
+    sm: '',
   },
   font: {
     body: 'helvetica',
