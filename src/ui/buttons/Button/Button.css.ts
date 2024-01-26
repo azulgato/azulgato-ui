@@ -1,24 +1,23 @@
-import { keyframes } from '@vanilla-extract/css'
 import { vars } from '../../../theme/theme.css'
 import { recipe } from '@vanilla-extract/recipes'
 
-const rotate = keyframes({
-  '0%': {
-    transform: 'translateY(0) translateZ(0) rotateZ(0deg)',
-  },
-  '100%': {
-    transform: 'translateY(5px) translateZ(-2px) rotateZ(-15deg)',
-  },
-})
+// const rotate = keyframes({
+//   '0%': {
+//     transform: 'translateY(0) translateZ(0) rotateZ(0deg)',
+//   },
+//   '100%': {
+//     transform: 'translateY(5px) translateZ(-2px) rotateZ(-15deg)',
+//   },
+// })
 
-const wave = keyframes({
-  '0%': {
-    transform: 'translate3d(-90px,0,0)',
-  },
-  '100%': {
-    transform: 'translate3d(85px,0,0)',
-  },
-})
+// const wave = keyframes({
+//   '0%': {
+//     transform: 'translate3d(-90px,0,0)',
+//   },
+//   '100%': {
+//     transform: 'translate3d(85px,0,0)',
+//   },
+// })
 
 const buttonBase = {
   borderRadius: '55px 55px 55px 55px',
