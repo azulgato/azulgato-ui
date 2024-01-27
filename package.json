@@ -1,6 +1,6 @@
 {
   "name": "azulgato-ui",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "El gato azul UI",
   "type": "module",
   "types": "./lib/main.d.ts",
